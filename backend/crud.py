@@ -14,7 +14,7 @@ def get_car(db: Session, car_id: int):
     """
     Essa função retorna um carro especifico, baseado no id, no  banco de dados
     """
-    return db.query(CarsModel).filter(CarsModel.car_id == car_id).first
+    return db.query(CarsModel).filter(CarsModel.car_id == car_id).first()
 
 def create_car(db: Session, car: CarCreate):
     """
@@ -31,7 +31,7 @@ def delete_car(db: Session, car_id: int):
     """
     Essa função deleta um carro no banco de dados
     """
-    db_car = db.query(CarsModel).filter(CarsModel.car_id == car_id).first
+    db_car = db.query(CarsModel).filter(CarsModel.car_id == car_id).first()
     db.delete(db_car)
     db.commit()
     return db_car
@@ -41,7 +41,7 @@ def update_car(db: Session, car_id: int, car: CarUpdate):
     """
     Essa função atualiza um carro no banco de dados
     """
-    db_car = db.query(CarsModel).filter(CarsModel.car_id == car_id).first
+    db_car = db.query(CarsModel).filter(CarsModel.car_id == car_id).first()
 
     if db_car is None:
         return None
