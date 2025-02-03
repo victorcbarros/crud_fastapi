@@ -1,6 +1,8 @@
 # PROJETO DE CRUD COM FASTAPI E STREAMLIT - SISTEMA DE GERENCIAMENTO DE VEÍCULOS
 
 
+![CRUD](images/CRUD.gif)
+
 
 ## 📌 Introdução 
 Este projeto tem como objetivo desenvolver um CRUD para um sistema de gerenciamento de veículos de uma locadora fictícia, a CB Rent. 
@@ -25,7 +27,7 @@ busca-se facilitar a administração da frota da locadora, garantindo um control
 ## ⚙️ Arquitetura e Tecnologias Utlizadas
 A arquitetura do projeto segue uma abordagem **modular e escalável**, garantindo uma separação clara entre frontend, backend e banco de dados. O sistema é composto pelos seguintes componentes:  
 
-![Diagrama do Projeto](images/diagrama%20do%20crud.pngdiagrama do crud.png)
+![Diagrama do Projeto](images/diagrama%20do%20crud.png)
 
 
 - **Backend**: Desenvolvido em **FastAPI**, garantindo alta performance e fácil integração com APIs modernas.  
@@ -39,14 +41,83 @@ A arquitetura do projeto segue uma abordagem **modular e escalável**, garantind
 Essa arquitetura permite escalabilidade e manutenção simplificada, tornando o sistema robusto e eficiente para o gerenciamento da frota da locadora. 🚗💨  
 
 ## 🗂 Estrutura do Projeto
-
-
-
+A estrutura de diretórios do projeto foi organizada da seguinte forma:
+```
+├── README.md # 
+├── backend 
+├── frontend 
+├── docker-compose.yml 
+├── poetry.lock 
+└── pyproject.toml 
+```
 ## 🛠 Como Executar o Projeto
 
+Este projeto está disponível no repositório do GitHub. A aplicação foi desenvolvida utilizando **Docker**, garantindo uma implantação simples e rápida.
+
+🔗 **[CB Rent - Sistema de Gerenciamento de Veículos](https://github.com/seu-repositorio)**
+
+### 📌 Pré-requisitos
+
+Antes de executar o projeto, certifique-se de ter os seguintes programas instalados em sua máquina:
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+### 🛠️ Passos para Execução
+
+Siga os passos abaixo para executar o projeto em seu ambiente local:
+
+#### 1. **Clonar o Repositório**
+
+Primeiro, clone o repositório para a sua máquina local:
+
+```bash
+git clone https://github.com/seu-repositorio.git
+cd seu-repositorio
+
+```
+
+#### 2. **Construir e Iniciar os Containers com Docker Compose**
+Com o repositório clonado, crie e inicie os containers utilizando o Docker Compose:
+```bash
+docker-compose up -d
+
+```
+Esse comando irá construir e executar os containers em segundo plano.
+
+#### 3. **Construir e Iniciar os Containers com Docker Compose**
+Agora, você pode acessar a API no navegador ou por meio do seu navegador utilizando a URL abaixo ou atraves de uma ferramenta como o Postman. A documentação da API estará disponível em:
+
+```bash
+http://localhost:8000/docs
+```
+
+#### 4. **Acessar o Frontend**
+Abra a interface do usuário (frontend) no navegador. Ela estará disponível em:
+
+```bash
+http://localhost:8501/
+```
+
+#### 5. **Parar os Containers**
+Quando terminar, você pode parar os containers utilizando o comando:
+
+```bash
+docker-compose down
+```
+Este comando irá parar e remover todos os containers criados.
 
 
-## 📜 Conclusão 
+## 🏁 Conclusão
+
+O projeto **CB Rent - Sistema de Gerenciamento de Veículos** foi desenvolvido como parte pratica  do **Bootcamp de Python da Jornada de Dados** do **Luciano Vasconcelos Filho**.
+
+Este projeto foi uma excelente oportunidade para aplicar na prática os conhecimentos adquiridos, criando um sistema de gerenciamento de veículos robusto e eficiente para uma locadora fictícia, com funcionalidades como cadastro, visualização, atualização e remoção de veículos.
+
+A utilização de **Docker Compose** facilitou a configuração e execução do ambiente de desenvolvimento, proporcionando uma execução mais simples e rápida, sem a necessidade de configurações manuais complexas.
+
+Agradeço por explorar este projeto! Caso tenha sugestões de melhorias, novas funcionalidades ou queira contribuir de alguma forma, fique à vontade para abrir uma **issue** ou criar um **pull request**. 
+
 
 
 
